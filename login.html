@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up - Bean Whisper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+    <main>
+        <section class="auth-section">
+            <div class="section-content">
+                <div class="auth-card" style="position:relative;">
+                    <a href="index.html" class="auth-home" aria-label="Home" title="Home" style="position:absolute;top:12px;left:12px;color:var(--text);text-decoration:none;font-size:1.05rem;">
+                      <i class="fa-solid fa-house"></i>
+                    </a>
+                    <div class="auth-visual" aria-hidden="true"></div>
+                    <div class="auth-content">
+                        <h2 class="section-title">Welcome back</h2>
+
+                        <div class="auth-forms">
+                            <form id="login-form" class="contact-form" aria-label="Login form" method="post" action="#">
+                                <input name="email" id="login-email" type="email" class="form-input" required placeholder="Email">
+                                <input name="password" id="login-password" type="password" class="form-input" required placeholder="Password">
+                                <button id="login-submit" type="submit" class="submit-button">Login</button>
+                                <div id="login-message" class="form-message" role="status" aria-live="polite"></div>
+                                <p class="auth-note">New here? <a href="signup.html" target="_blank" rel="noopener noreferrer">Create an account</a></p>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
